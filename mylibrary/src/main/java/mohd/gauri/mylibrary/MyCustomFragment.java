@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -32,6 +33,7 @@ public class MyCustomFragment extends Fragment {
     public void changeText(String text){
         TextView textView = getActivity().findViewById(R.id.text01);
         textView.setText(text);
+        Toast.makeText(getContext(), "Text set", Toast.LENGTH_SHORT).show();
     }
 
     /**
